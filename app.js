@@ -43,6 +43,11 @@ app.put("/api", function (req, res) {
 
   quantity = req.body.quantity ? req.body.quantity : null;
   console.log(amount, time, quantity);
+
+  return res.status(200).json({
+    success:true,
+    message:"Successfully Updated the User details"
+  });
 });
 
 bot.onText(/\/start/, (msg) => {
