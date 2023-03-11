@@ -147,7 +147,7 @@ bot.onText(/\/Yes/, async (msg) => {
           );
         });
     },
-    time ? time : 5
+    time ? time : 3600
   );
 });
 
